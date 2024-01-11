@@ -11,7 +11,7 @@ LABEL org.opencontainers.image.title="Laurin's Personal Portfolio" \
 WORKDIR /app
 
 # After that, move package-lock.json to ensure `npm ci` can run smoothly
-COPY package.json . 
+COPY package-lock.json . 
 
 # Then run npm ci to install all dependencies
 RUN npm ci
